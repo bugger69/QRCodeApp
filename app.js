@@ -1,3 +1,5 @@
+import qrcode from "qrcodejs"
+
 const form = document.querySelector('#choices');
 const dropdown = document.querySelector('#options');
 const linkForm = document.querySelector('.input-div .link-form');
