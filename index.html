@@ -8,26 +8,26 @@
     <title>QR Code Reader</title>
   </head>
   <body>
-    
-    <form action="" id="choices">
-      <label for="options">Choose One of these:</label>
-      <select name="" id="options" class="dropdown">
-        <option value="scan">Scan</option>
-        <option value="generate">Generate</option>
-      </select>
-      <button>Apply</button>
-    </form>
+    <!-- going to refactor this into two sections, one to generate and another to scan -->
 
+    <!-- generate section -->
     <div class="input-div">
       <form action="" class="link-form">
-        <div class="input"></div>
-        <button class="link-submit"></button>
+        <label for="link-box">Paste the link here: </label>
+        <input type="text" id="link-box" class="input">
+        <button class="link-submit">Convert to QR-Code</button>
       </form>
     </div>
 
     <div id="qrcodedisp"></div>
-    <div id="qrcode"></div>
 
+    <!-- scan section -->
+    <div class="vid">
+      <video width="400" height="300" id="videoElement" autoplay></video>
+      <canvas width="400" height="300" id="canvasElement"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.3.1/dist/jsQR.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="app.js"></script>
   </body>
