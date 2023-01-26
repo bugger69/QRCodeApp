@@ -1,0 +1,1 @@
+A JavaScript QR Code Scanner and convertor.
